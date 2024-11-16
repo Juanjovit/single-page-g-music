@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>G-Music</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo">G-Music</h1>
+
+      <nav id="menu">
+        <ul id="hamburguesa">
+          <li><a href="#menu">Abrir</a></li>
+          <li><a href="#">Cerrar</a></li>
+        </ul>
+        <ul id="carrito">
+          <li><a href="">Carrito</a></li>
+        </ul>
+        <ul id="barra">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#tutorialDeGuitarra">Tutorial de Guitarra</a></li>
+          <li><a href="#alumno">Alumno</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <ul id="miniCarrito">
+      <li>Productos agregados: <span>0</span></li>
+      <li>Precio total: $<span>0</span></li>
+    </ul>
+
+    <div id="imagenInicio"></div>
+
+    <h2 class="titulosInicio">Categorias</h2>
+
+    <div id="categorias">
+      <ul>
+        <li>Todas</li>
+        <li>Fender</li>
+        <li>Gibson</li>
+        <li>PRS</li>
+      </ul>
+    </div>
+
+    <h2 class="titulosInicio">Nuestras Guitarras Electricas</h2>
+
+    <div id="catalogo"></div>
+
+    <div class="modal" id="modalProducto" style="visibility: hidden">
+      <div>
+        <p class="botonCerrar">X</p>
+        <img src="" alt="" />
+        <h3>Producto</h3>
+        <p>Precio: $<span>$0</span></p>
+        <p>Descripción</p>
+        <div class="boton2">
+          <span>Agregar al carro</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modalCarrito" style="visibility: hidden">
+      <div>
+        <p class="botonCerrar">X</p>
+        <p>Items: <span>0</span> - Total: <span>$0</span></p>
+        <hr />
+        <ul></ul>
+      </div>
+      <p>Vaciar carrito</p>
+      <p>Check Out</p>
+    </div>
+
+    <div class="modal" id="formulario" style="visibility: hidden">
+      <p class="botonCerrar">X</p>
+      <form action="gracias.html" method="post" enctype="multipart/form-data">
+        <div>
+          <input type="text" name="nombre" placeholder="Nombre" />
+        </div>
+
+        <div>
+          <input type="tel" name="telefono" placeholder="Tel" />
+        </div>
+
+        <div>
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+
+        <div>
+          <input
+            type="lugar"
+            name="lugar"
+            placeholder="Lugar de entrega"
+            required
+          />
+        </div>
+
+        <div>
+          <input
+            type="fecha"
+            name="fecha"
+            placeholder="Fecha de entrega"
+            required
+          />
+        </div>
+
+        <div>
+          <input type="text" name="tarjeta" placeholder="N de tarjeta" />
+        </div>
+
+        <div>
+          <input
+            type="text"
+            name="codigo de seguridad"
+            placeholder="Codigo de seguridad"
+          />
+        </div>
+
+        <div>
+          <input type="submit" id="enviar" value="Enviar" />
+        </div>
+      </form>
+    </div>
+
+    <div class="modal" id="modalOferta" style="visibility: hidden">
+      <p class="botonCerrar">X</p>
+    </div>
+
+    <div id="tutorial"></div>
+
+    <div id="alumno">
+      <ul></ul>
+    </div>
+
+    <script src="final.js"></script>
+  </body>
+</html>
